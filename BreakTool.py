@@ -69,7 +69,7 @@ while loop:
             menu()
         else:
             break    
-elif what == "2":
+  if what == "2":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y git")
@@ -85,7 +85,7 @@ elif what == "2":
             menu()
         else:
             break
-elif what == "6":
+  if what == "6":
         os.system("pkg install -y wget")
         os.system("cd /data/data/com.termux/files/home && wget https://Auxilus.github.io/metasploit.sh")
         os.system("cd /data/data/com.termux/files/home && bash metasploit.sh")
@@ -103,7 +103,7 @@ elif what == "6":
             menu()
         else:
             break
-elif what == "3":
+if what == "3":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y hydra")
@@ -117,7 +117,7 @@ elif what == "3":
             menu()
         else:
             break
-elif what == "4":
+if what == "4":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/themastersunil/ngrok.git")
@@ -131,7 +131,7 @@ elif what == "4":
             menu()
         else:
             break
- elif what == "5":
+ if what == "5":
         os.system("pkg update -y")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/Hax4us/Nethunter-In-Termux.git")
         os.system("cd /data/data/com.termux/files/home && cd Nethunter-In-Termux && chmod +x kalinethunter")
@@ -145,7 +145,7 @@ elif what == "4":
             menu()
         else:
             break
- elif what == "16":
+ if what == "16":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("pkg install -y python2")
@@ -176,7 +176,7 @@ elif what == "4":
                 menu()
             else:
                 break
-    elif what == "99":
+    if what == "99":
         print("Bye.")
         break
             
