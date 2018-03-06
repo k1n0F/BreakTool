@@ -50,6 +50,11 @@ ___________________________
 """)
  
 loop = True
+
+while loop:
+    menu()
+    what = input("#: ")
+    
 elfe what == "99":
      print("bb.")
      break
