@@ -5,7 +5,8 @@ by k1n0f
 
 
 
-from the first have type
+first you have to type
+
 git clone https://github.com/k1n0F/BreakTool
 
 cd BreakTool
@@ -14,12 +15,12 @@ chmod +x BreakTool.py
 python2 BreakTool -h 
 later
 
-then do not write "python2 BreakTool -h "
+thers no need to write "python2 BreakTool -h "
 
-type python2 BreakTool
+type "python2 BreakTool"
 
 perfect
 
-you have hack tool
+you have a hack tool.
 
 
