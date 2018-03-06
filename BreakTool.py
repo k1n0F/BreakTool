@@ -51,6 +51,10 @@ ___________________________
  
 loop = True
 
+while loop:
+    menu()
+    what = input("#: ")
+
     if what == "1":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
