@@ -22,8 +22,8 @@ ver 1.0
 
 ================
 
-1.install sqlmap
-2.install Nmap
+1.install Nmap
+2.install sqlmap
 3.install Hydra
 4.install Ngrok
 5.install Kali Nethunter
@@ -51,11 +51,21 @@ ___________________________
  
 loop = True
 
-while loop:
-    menu()
-    what = input("#: ")
-    
-elif what == "1":
+    if what == "1":
+        os.system("cd /data/data/com.termux/files/home")
+        os.system("pkg update -y")
+        os.system("pkg install -y nmap")
+        os.system("cd /data/data/com.termux/files/home")
+        print("====================================")
+        print("[+] nmap installed successfully :)")
+        print("[+] Type 'nmap' to start.")
+        print("====================================")
+        rmenu = input("[?] Back to Menu? (y/n): ")
+        if rmenu == "y":
+            menu()
+        else:
+            break    
+elif what == "2":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y git")
@@ -103,7 +113,7 @@ elif what == "3":
             menu()
         else:
             break
-elif what == "5":
+elif what == "4":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/themastersunil/ngrok.git")
@@ -117,7 +127,7 @@ elif what == "5":
             menu()
         else:
             break
- elif what == "6":
+ elif what == "5":
         os.system("pkg update -y")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/Hax4us/Nethunter-In-Termux.git")
         os.system("cd /data/data/com.termux/files/home && cd Nethunter-In-Termux && chmod +x kalinethunter")
@@ -131,7 +141,7 @@ elif what == "5":
             menu()
         else:
             break
- elif what == "18":
+ elif what == "16":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("pkg install -y python2")
