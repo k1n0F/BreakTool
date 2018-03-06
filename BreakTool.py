@@ -27,7 +27,7 @@ ver 1.0
 3.install Hydra
 4.install Ngrok
 5.install Kali Nethunter
-6.install 
+6.install Metasploit
 7.install WPScan
 8.install Routersploit
 9.install Weeman
@@ -42,13 +42,17 @@ ver 1.0
 18.install viSQL
 19.install Fedora
 20.install Hash-Buster
-21.install Metasploit
+
+___________________________
+exit "99"
 ___________________________
 
 """)
  
 loop = True
-
+elfe what == "99":
+     print("bb.")
+     break
 elif what == "1":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
