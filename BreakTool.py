@@ -55,9 +55,6 @@ while loop:
     menu()
     what = input("#: ")
     
-elfe what == "99":
-     print("bb.")
-     break
 elif what == "1":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
@@ -74,7 +71,7 @@ elif what == "1":
             menu()
         else:
             break
-elif what == "4":
+elif what == "6":
         os.system("pkg install -y wget")
         os.system("cd /data/data/com.termux/files/home && wget https://Auxilus.github.io/metasploit.sh")
         os.system("cd /data/data/com.termux/files/home && bash metasploit.sh")
@@ -134,6 +131,40 @@ elif what == "5":
             menu()
         else:
             break
+ elif what == "18":
+        os.system("pkg update -y")
+        os.system("pkg install -y git")
+        os.system("pkg install -y python2")
+        os.system("cd /data/data/com.termux/files/home && git clone https://github.com/shawarkhanethicalhacker/D-TECT.git")
+        print("====================================")
+        print("[+] Hash-Buster installed successfully :)")
+        print("[+] Go to Hash-Buster folder and type 'python2 hash.py' to start.")
+        print("====================================")
+        rmenu = input("[?] Back to Menu? (y/n): ")
+        if rmenu == "y":
+            menu()
+        else:
+            break
+            os.system("pkg update -y")
+            os.system("pkg install -y git")
+            os.system("pkg install -y python2")
+            os.system("cd /data/data/com.termux/files/home && git clone https://github.com/reverse-shell/routersploit.git")
+            os.system("cd /data/data/com.termux/files/home && cd routersploit")
+            os.system("pip2 install -r requirements.txt")
+            os.system("pip2 install -r requirements-dev.txt")
+            os.system("pip2 install -r requests")
+            print("====================================")
+            print("[+] routersploit installed successfully :)")
+            print("[+] Go to routersploit folder and type 'python2 rsf.py' to start.")
+            print("====================================")
+            rmenu = input("[?] Back to Menu? (y/n): ")
+            if rmenu == "y":
+                menu()
+            else:
+                break
+    elif what == "99":
+        print("Bye.")
+        break
             
 
 
