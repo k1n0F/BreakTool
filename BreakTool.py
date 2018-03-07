@@ -51,6 +51,7 @@ ___________________________
 """)
  
 loop = True
+
 while loop:
     menu()
     what = input("#: ")
@@ -178,7 +179,7 @@ while loop:
             menu()
         else:
             break
-elif what == "2":
+    elif what == "2":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y git")
@@ -208,8 +209,7 @@ elif what == "2":
             menu()
         else:
             break
-   
-elif what == "4":
+    elif what == "4":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/themastersunil/ngrok.git")
@@ -223,7 +223,7 @@ elif what == "4":
             menu()
         else:
             break
-   elif what == "5":
+    elif what == "5":
         os.system("pkg update -y")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/Hax4us/Nethunter-In-Termux.git")
         os.system("cd /data/data/com.termux/files/home && cd Nethunter-In-Termux && chmod +x kalinethunter")
