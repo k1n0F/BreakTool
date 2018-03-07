@@ -178,7 +178,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "2":
+    elif what == "3":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y hydra")
@@ -192,7 +192,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "3":
+    elif what == "2":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y git")
@@ -208,7 +208,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "4":
+    elif what == "6":
         os.system("pkg install -y wget")
         os.system("cd /data/data/com.termux/files/home && wget https://Auxilus.github.io/metasploit.sh")
         os.system("cd /data/data/com.termux/files/home && bash metasploit.sh")
@@ -226,7 +226,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "5":
+    elif what == "4":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("cd /data/data/com.termux/files/home && git clone https://github.com/themastersunil/ngrok.git")
@@ -456,5 +456,5 @@ while loop:
             else:
                 break
     elif what == "99":
-        print("Bye.")
+        print("bb.")
         break
