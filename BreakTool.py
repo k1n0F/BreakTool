@@ -1,3 +1,4 @@
+#!/bin/python 
 import os
 
 def menu():
@@ -64,9 +65,6 @@ while loop:
             print("[+] Please put down you android and go to the toilet...")
             print("Because this will take a long time.")
             print("========================================================")
-            os.system("su")
-            os.system("cd")
-            os.system("rm -r /data/data/com.termux/files/home")
             os.system("pkg update")
             os.system("pkg install -y git")
             os.system("pkg install -y python")
@@ -180,7 +178,7 @@ while loop:
             menu()
         else:
             break
-  elif what == "2":
+elif what == "2":
         os.system("cd /data/data/com.termux/files/home")
         os.system("pkg update -y")
         os.system("pkg install -y git")
