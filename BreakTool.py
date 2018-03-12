@@ -255,7 +255,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "7":
+    elif what == "10":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("pkg install -y python2")
@@ -322,7 +322,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "11":
+    elif what == "110":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("pkg install -y python")
@@ -336,7 +336,7 @@ while loop:
             menu()
         else:
             break
-    elif what == "12":
+    elif what == "11":
         os.system("pkg update -y")
         os.system("pkg install -y git")
         os.system("pkg install -y python")
@@ -456,6 +456,8 @@ while loop:
                 menu()
             else:
                 break
+    elif what == "":            
+                
     elif what == "99":
         print("bb.")
         break
