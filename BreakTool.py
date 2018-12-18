@@ -455,9 +455,7 @@ while loop:
             if rmenu == "y":
                 menu()
             else:
-                break
-    elif what == "":            
-                
+                break                
     elif what == "99":
         print("bb.")
         break
